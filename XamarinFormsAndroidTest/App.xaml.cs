@@ -17,8 +17,11 @@ namespace XamarinFormsAndroidTest
         protected override void OnStart()
         {
             // Handle when your app starts
-            AppCenter.Start("android=82fafe4c-2ce8-429f-b536-d77a3b04382c;" + "uwp={Your UWP App secret here};" +
-                   "ios={Your iOS App secret here}",
+            //AppCenter.Start("android=82fafe4c-2ce8-429f-b536-d77a3b04382c;" + "uwp={Your UWP App secret here};" +
+                   //"ios={Your iOS App secret here}",
+                   //typeof(Analytics), typeof(Crashes));
+            AppCenter.Start("ios=2acf5f76-f998-4187-8ba3-48c12687d1cd;" + "uwp={Your UWP App secret here};" +
+                   "android={Your Android App secret here}",
                    typeof(Analytics), typeof(Crashes));
         }
 
